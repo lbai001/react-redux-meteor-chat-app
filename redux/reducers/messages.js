@@ -2,7 +2,7 @@ import {
   FETCH_MESSAGE
 } from '../actions/messages';
 
-export default function (state = { isFetching: false, history: [] }, action) {
+export default function (state = { history: [] }, action) {
   switch (action.type) {
     case FETCH_MESSAGE:
       return {
