@@ -1,0 +1,47 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node',
+1 verbose cli   '/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'aldeed:simple-schema' ]
+2 info using npm@3.10.9
+3 info using node@v4.7.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData aldeed:simple-schema
+8 silly fetchPackageMetaData Error: Unsupported URL Type: aldeed:simple-schema
+8 silly fetchPackageMetaData     at parseUrl (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:186:13)
+8 silly fetchPackageMetaData     at npa (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:79:12)
+8 silly fetchPackageMetaData     at module.exports (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/realize-package-specifier/index.js:12:15)
+8 silly fetchPackageMetaData     at fetchPackageMetadata (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/fetch-package-metadata.js:54:12)
+8 silly fetchPackageMetaData     at fetchMetadataWithVersion (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install/deps.js:228:14)
+8 silly fetchPackageMetaData     at /Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install/deps.js:241:16
+8 silly fetchPackageMetaData     at /Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+8 silly fetchPackageMetaData     at Array.forEach (native)
+8 silly fetchPackageMetaData     at /Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+8 silly fetchPackageMetaData     at Array.forEach (native)
+8 silly fetchPackageMetaData  error for aldeed:simple-schema [Error: Unsupported URL Type: aldeed:simple-schema]
+9 silly rollbackFailedOptional Starting
+10 silly rollbackFailedOptional Finishing
+11 silly runTopLevelLifecycles Finishing
+12 silly install printInstalled
+13 verbose stack Error: Unsupported URL Type: aldeed:simple-schema
+13 verbose stack     at parseUrl (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:186:13)
+13 verbose stack     at npa (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:79:12)
+13 verbose stack     at module.exports (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/realize-package-specifier/index.js:12:15)
+13 verbose stack     at fetchPackageMetadata (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/fetch-package-metadata.js:54:12)
+13 verbose stack     at fetchMetadataWithVersion (/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install/deps.js:228:14)
+13 verbose stack     at /Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install/deps.js:241:16
+13 verbose stack     at /Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+13 verbose stack     at Array.forEach (native)
+13 verbose stack     at /Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+13 verbose stack     at Array.forEach (native)
+14 verbose cwd /Users/xiaolubai/Desktop/simple-todos
+15 error Darwin 14.5.0
+16 error argv "/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node" "/Users/xiaolubai/.meteor/packages/meteor-tool/.1.4.2_7.4z5jb++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "aldeed:simple-schema"
+17 error node v4.7.3
+18 error npm  v3.10.9
+19 error Unsupported URL Type: aldeed:simple-schema
+20 error If you need help, you may report this error at:
+20 error     <https://github.com/npm/npm/issues>
+21 verbose exit [ 1, true ]
