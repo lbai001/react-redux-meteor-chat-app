@@ -1,4 +1,5 @@
 import { loading, error, finishedLoading } from './loadingState';
+import Messages from '../../imports/api/messages';
 
 export const FETCH_MESSAGE = 'FETCH_MESSAGE';
 
@@ -10,13 +11,13 @@ function sendMessages(data) {
 }
 export function fetchMessage() {
   return (dispatch, getState) => {
-    dispatch(loading());
-    Meteor.call('fetchMessage', (err, data) => {
-      if(err) {
-        dispatch(error(err));
+    Meteor.subscribe("messages");
+    allMessagesCursor = Messages.find();
+    allMessagesCursor.observe({
+      added: function(doc, beforeIndex) {
+        console.log("added a message", doc.text)
+        dispatch(sendMessages(doc));
       }
-      dispatch(sendMessages(data))
-      dispatch(finishedLoading());
     })
-  }
+  };
 }

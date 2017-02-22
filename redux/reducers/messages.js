@@ -7,7 +7,7 @@ export default function (state = { history: [] }, action) {
     case FETCH_MESSAGE:
       return {
         ...state,
-        history: action.data,
+        history: [...state.history, action.data]
       };
     default:
       return state;

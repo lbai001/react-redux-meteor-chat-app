@@ -3,17 +3,26 @@ import { connect } from 'react-redux';
 
 import { createContainer } from 'meteor/react-meteor-data';
 import { fetchMessage } from '../../redux/actions/messages'
-import { Messages } from '../api/messages.js';
+
+import Input from './components/input';
 import MessageView from './Messages';
 
 class App extends Component {
+  componentWillUnmount() {
+    Meteor.subscribe('messages').stop();
+  }
   componentDidMount() {
-    this.props.dispatch(fetchMessage());
+    this.props.dispatch(fetchMessage())
   }
   render() {
     return (
-      <div>
-        <MessageView history={this.props.Messages.history}/>
+      <div className="container">
+        <div>
+          <MessageView history={this.props.Messages.history}/>
+        </div>
+        <footer>
+          <Input />
+        </footer>
       </div>
     )
   }
